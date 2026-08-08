@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    width: 650px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.field-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* ASP.NET TextBox */
+input[type="text"] {
+    width: 100%;
+}
+
+/* ASP.NET Multiline TextBox */
+textarea {
+    resize: vertical;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 8px 18px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1976d2;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .btn:hover {
+        background-color: #125ca1;
+    }
+
+.success-message {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+table {
+    margin-top: 5px;
+}
+
+span[style*="Red"] {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.textbox {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.output {
+    display: block;
+    margin-top: 25px;
+    padding: 15px;
+    border: 1px solid #4CAF50;
+    background-color: #f4fff4;
+    border-radius: 5px;
+    line-height: 1.8;
+    font-size: 15px;
+}
