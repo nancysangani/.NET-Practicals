@@ -1,0 +1,40 @@
+﻿@model List<product_catalog_application.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    Layout = null;
+}
+
+<body style="background-color: #FFF1E6;">
+
+    <h4 style="font-family: Cambria">Name: Nancy Sangani <br />Enrolment No: 92400120652</h4>
+
+    <h2 style="text-decoration: underline">Product Catalog</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProductId</td>
+                <td>@product.ProductName</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>@product.Category</td>
+                <td>
+                    @Html.ActionLink("View Details", "Details", "Product", new { id = product.ProductId }, null)
+                </td>
+            </tr>
+        }
+    </table>
+</body>

@@ -1,0 +1,38 @@
+﻿
+@model product_catalog_application.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@{
+    Layout = null;
+}
+
+<body style="background-color: #FFF1E6;">
+
+    <h4 style="font-family: Cambria">Name: Nancy Sangani <br />Enrolment No: 92400120652</h4>
+
+    <h2 style="text-decoration: underline">Product Details</h2>
+
+    @if (Model != null)
+    {
+        <p>Product Id: @Model.ProductId</p>
+
+        <p>Product Name: @Model.ProductName</p>
+
+        <p>Description: @Model.Description</p>
+
+        <p>Price: @Model.Price</p>
+
+        <p>Category: @Model.Category</p>
+    }
+    else
+    {
+        <p>Product not found!</p>
+    }
+
+    <br />
+
+    @Html.ActionLink("Back to Product Catalog", "Index", "Product")
+</body>
